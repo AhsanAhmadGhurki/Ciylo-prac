@@ -1,15 +1,87 @@
+@import "tailwindcss";
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   /* color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424; */
-
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
+}
+
+.p-x {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.m-x {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+.m-y {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.rounded-custom {
+  border-radius: 24px;
+}
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+  &:hover {
+    color: #00c9a7 !important;
+  }
+  &:active {
+    color: #00c9a7 !important;
+    transform: scale(0.97) !important; /* optional click effect */
+  }
+  &:focus {
+    color: #00c9a7 !important;
+  }
+  &:focus-visible {
+    color: #00c9a7 !important;
+  }
+}
+.button-custom,
+.button-custom.ant-btn,
+.ant-btn.button-custom {
+  background-color: #00c9a7 !important; 
+  color: #fff !important;
+  border-radius: 16px;
+  font-size: 16px !important;
+  font-weight: medium !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important; /* smooth hover/active effect */
+}
+
+.button-custom:hover,
+.button-custom.ant-btn:hover,
+.ant-btn.button-custom:hover {
+  background-color: #29d9bb !important;
+  box-shadow: 0 0 0 2px rgba(0, 201, 167, 0.4) !important; /* subtle focus ring */
+  color: #fff !important;
+}
+
+.button-custom:active,
+.button-custom.ant-btn:active,
+.ant-btn.button-custom:active {
+  background-color: #00c9a7 !important;
+  color: #fff !important;
+  transform: scale(0.97) !important; /* optional click effect */
+}
+
+.button-custom:focus,
+.button-custom.ant-btn:focus,
+.ant-btn.button-custom:focus,
+.button-custom.ant-btn:focus-visible,
+.ant-btn.button-custom:focus-visible {
+  outline: none !important;
+  border: none !important;
 }
